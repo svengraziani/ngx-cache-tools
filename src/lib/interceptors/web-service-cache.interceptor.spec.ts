@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
 import { WebServiceCacheInterceptor } from './web-service-cache.interceptor';
+import {CACHE_STRATEGY} from "../tokens/cache-strategy";
 
 describe('WebServiceCacheInterceptor', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    providers: [
-      WebServiceCacheInterceptor
-      ]
+    providers: [WebServiceCacheInterceptor,
+      {provide: CACHE_STRATEGY, useValue: {}}],
   }));
 
   it('should be created', () => {
