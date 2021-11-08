@@ -1,6 +1,26 @@
 {
   "name": "@anexia/ngx-cache-tools",
-  "version": "0.0.1",
+  "description": "This library provides a toolset for common web service cache management, by providing hackable Cache Strategies and a Http Interceptor.",
+  "version": "12.0.0",
+  "author": {
+    "email": "sgraziani@anexia-it.com",
+    "name": "Sven Graziani"
+  },
+  "keywords": [
+    "interceptor",
+    "angular",
+    "loading",
+    "state",
+    "tool",
+    "dry",
+    "anexia"
+  ],
+  "repository": {
+    "url": "https://github.com/svengraziani/ngx-cache-tools",
+    "type": "git"
+  },
+  "license": "MIT",
+  "private": false,
   "peerDependencies": {
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0",
