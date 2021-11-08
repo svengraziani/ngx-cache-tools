@@ -14,6 +14,7 @@ export class WebServiceCacheInterceptor implements HttpInterceptor {
   public constructor(@Inject(CACHE_STRATEGY) private readonly strategies: CacheStrategies) {}
 
   public intercept(request: HttpRequest<unknown>, delegate: HttpHandler): Observable<any> {
+
     if (!this.strategies) {
       return delegate.handle(request);
     }
@@ -32,7 +33,6 @@ export class WebServiceCacheInterceptor implements HttpInterceptor {
 
     const strategy = matchingStrategies.pop() as CacheStrategy;
     const handler = strategy.handler;
-
     return handler.has(request).pipe(
       switchMap(isStored => {
         if (isStored) {

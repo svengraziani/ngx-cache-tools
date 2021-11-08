@@ -28,7 +28,7 @@ export class LocalStorageCacheHandler implements CacheHandlerStrategy {
   }
 
   public has(request: HttpRequest<any>): Observable<boolean> {
-    return this.get(request).pipe(map(result => Boolean(result)));
+    return this._get(request).pipe(map(result => Boolean(result)));
   }
 
   public isExpired(request: HttpRequest<any>): Observable<boolean> {

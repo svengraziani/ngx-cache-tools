@@ -12,3 +12,5 @@ export * from './lib/tokens/cache-strategy';
 export * from './lib/strategies/local-storage-cache-handler';
 
 export * from './lib/configs/provide-interceptor-config';
+
+export * from './lib/utils/common-milli-formats';

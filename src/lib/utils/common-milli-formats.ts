@@ -1,0 +1,4 @@
+
+export const ONE_HOUR_IN_MILLIS = 60 * 60 * 1000;
+export const ONE_DAY_IN_MILLIS = ONE_HOUR_IN_MILLIS * 24;
+export const ONE_WEEK_IN_MILLIS = ONE_DAY_IN_MILLIS * 7;
