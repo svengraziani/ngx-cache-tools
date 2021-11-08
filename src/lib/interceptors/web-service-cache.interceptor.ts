@@ -9,7 +9,7 @@ import {CacheStrategies, CacheStrategy} from "../interfaces/cache-strategy";
 import {CACHE_STRATEGY} from "../tokens/cache-strategy";
 import {map, shareReplay, switchMap} from "rxjs/operators";
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 export class WebServiceCacheInterceptor implements HttpInterceptor {
   public constructor(@Inject(CACHE_STRATEGY) private readonly strategies: CacheStrategies) {}
 

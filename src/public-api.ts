@@ -10,3 +10,5 @@ export * from './lib/interfaces/storage-record-dto';
 export * from './lib/tokens/cache-strategy';
 
 export * from './lib/strategies/local-storage-cache-handler';
+
+export * from './lib/configs/provide-interceptor-config';
